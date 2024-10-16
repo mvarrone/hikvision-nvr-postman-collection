@@ -5,12 +5,12 @@ Postman collection with **two environments** (LAN and WAN) to interact with a Hi
 ## Device tested
 
 - Brand: Hikvision
-- Model: DS-7104NI-Q1 / 4P
+- Model: [DS-7104NI-Q1 / 4P](https://www.hikvision.com/es-la/products/IP-Products/Network-Video-Recorders/Value-Series/ds-7104ni-q1-4p/)
 
 > [!IMPORTANT]
-> If you try this collection on a different device, probably some of the HTTP requests will not work because each NVR device contains different APIs inside of it due each one is oriented to different use cases
+> If you attempt to use this collection on a different device, some HTTP requests may not function as expected. This is because each NVR device contains distinct APIs tailored to its specific use case
 > 
-> But, probably most of the *general* requests will work on your device
+> However, most of the general requests will likely work on your device
 
 ## 🛠️ Environment Variables
 
@@ -22,7 +22,7 @@ To use this collection in Postman, you need to configure the following environme
 - **`NVR_HOSTNAME`**  
 - **`NVR_PORT`**
 
-### 🔧 Example Configuration
+### 🔧 Example Configuration (needed in Step 4 below)
 
 ```bash
 NVR_USERNAME=admin
