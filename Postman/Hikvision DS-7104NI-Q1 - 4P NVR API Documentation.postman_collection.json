@@ -1,0 +1,4665 @@
+{
+	"info": {
+		"_postman_id": "2a91fbca-38d4-479a-93a8-4ba69e04873f",
+		"name": "Hikvision DS-7104NI-Q1 / 4P NVR API Documentation",
+		"description": "<img src=\"https://content.pstmn.io/651891e0-1de6-4c0f-bcec-40cd8fc47880/SGlrdmlzaW9uIGxvZ28ucG5n\">\n\nCollection developed with the purpose of interact with a specific Hikvision Network Video Recorder (NVR) device\n\n## Device specifications\n\n- Brand: Hikvision\n    \n- Model: DS-7104NI-Q1 / 4P\n    \n- Serial No: DS-7104NI-Q1 / 4P0420200105CCRRE08875843WCVU\n    \n- Firmware Version: V3.4.99 build 180706\n    \n- Encoding Version: V5.0 build 180605\n    \n- Web Version: V4.0.1 build 180504\n    \n- Plugin Version: V3.0.6.32\n    \n- Product official website: [DS-7104NI-Q1 / 4P](https://www.hikvision.com/es-la/products/IP-Products/Network-Video-Recorders/Value-Series/ds-7104ni-q1-4p/)\n    \n\n## Environment variables\n\nAn environment called _**development**_ was used for this collection. Inside of it, environment variables were set as follows:\n\n- NVR_USERNAME: Type: secret\n    \n- NVR_PASSWORD: Type: secret\n    \n- NVR_HOSTNAME: Type: default\n    \n- NVR_PORT: Type: default\n    \n- NVR_PROTOCOL: Type: default\n    \n\nComplete each environment variable with your own sensitive data\n\n## Authentication\n\nAuthentication needed for each request is inherited from parent (Check _Authorization_ tab here and then set Auth type, Username and Password fields)\n\n- For Auth type: set Digest Auth\n    \n- For username: set {{ NVR_USERNAME }}\n    \n- For password: set {{ NVR_PASSWORD }}\n    \n\n## Sources\n\n1. [Device Network SDK_Win64 (V6.1.9.48 |338.44MB |2023/06/14)](https://www.hikvision.com/en/support/tools/hitools/clc33f9cd4117c753a/)\n    \n2. [GitHub: loozhengyuan/hikvision-sdk/resources](https://github.com/loozhengyuan/hikvision-sdk/tree/master/resources)\n    \n3. [Intelligent Security API (Metadata) - Developer Guide.pdf](https://enpinfo.hikvision.com/unzip/20201110210551_77443_doc/pdf.pdf)\n    \n\n#### Details for source No. 1\n\nOnce the zip file has been downloaded, unzip it and open the PDF file that can be found at:  \nEN-HCNetSDKV6.1.9.48_build20230410_win64/doc/_**Device Network SDK (General)_Developer Guide_V6.1.7.X_20230606.pdf.**_\n\nFile was renamed as _**1 - Device Network SDK (General)_Developer Guide_V6.1.7.X_20230606.pdf**_\n\n#### Details for source No. 2\n\nDownload _**isapi.pdf**_ file from the GitHub repository\n\nFile was renamed as _**2 - Intelligent Security API (General Application) - Developer Guide.pdf**_\n\n#### Details for source reference No. 3\n\nFile is downloaded as _**pdf.pdf**_\n\nFile was renamed as _**3 - Intelligent Security API (Metadata) - Developer Guide.pdf**_",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15810418"
+	},
+	"item": [
+		{
+			"name": "ISAPI",
+			"item": [
+				{
+					"name": "System",
+					"item": [
+						{
+							"name": "time",
+							"item": [
+								{
+									"name": "ntpServers",
+									"item": [
+										{
+											"name": "/ISAPI/System/time/ntpServers",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/time/ntpServers",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"time",
+														"ntpServers"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/System/time/ntpServers/1",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/time/ntpServers/1",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"time",
+														"ntpServers",
+														"1"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/System/time/ntpServers/capabilities",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/time/ntpServers/capabilities",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"time",
+														"ntpServers",
+														"capabilities"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "/ISAPI/System/time",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/time",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"time"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/System/time/capabilities",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/time/capabilities",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"time",
+												"capabilities"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/System/time/timeZone",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/time/timeZone",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"time",
+												"timeZone"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/System/time/localTime",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/time/localTime",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"time",
+												"localTime"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Network",
+							"item": [
+								{
+									"name": "DDNS",
+									"item": [
+										{
+											"name": "/ISAPI/System/Network/DDNS",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Network/DDNS",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Network",
+														"DDNS"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/System/Network/DDNS/capabilities",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Network/DDNS/capabilities",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Network",
+														"DDNS",
+														"capabilities"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/System/Network/DDNS/1",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Network/DDNS/1",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Network",
+														"DDNS",
+														"1"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "EZVIZ",
+									"item": [
+										{
+											"name": "/ISAPI/System/Network/EZVIZ",
+											"event": [
+												{
+													"listen": "test",
+													"script": {
+														"exec": [
+															""
+														],
+														"type": "text/javascript",
+														"packages": {}
+													}
+												}
+											],
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Network/EZVIZ",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Network",
+														"EZVIZ"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/System/Network/EZVIZ/capabilities",
+											"event": [
+												{
+													"listen": "test",
+													"script": {
+														"exec": [
+															""
+														],
+														"type": "text/javascript",
+														"packages": {}
+													}
+												}
+											],
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Network/EZVIZ/capabilities",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Network",
+														"EZVIZ",
+														"capabilities"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "Integrate",
+									"item": [
+										{
+											"name": "/ISAPI/System/Network/Integrate",
+											"event": [
+												{
+													"listen": "test",
+													"script": {
+														"exec": [
+															""
+														],
+														"type": "text/javascript",
+														"packages": {}
+													}
+												}
+											],
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Network/Integrate",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Network",
+														"Integrate"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/System/Network/Integrate/capabilities",
+											"event": [
+												{
+													"listen": "test",
+													"script": {
+														"exec": [
+															""
+														],
+														"type": "text/javascript",
+														"packages": {}
+													}
+												}
+											],
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Network/Integrate/capabilities",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Network",
+														"Integrate",
+														"capabilities"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "UPnP",
+									"item": [
+										{
+											"name": "/ISAPI/System/Network/UPnP",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Network/UPnP",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Network",
+														"UPnP"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/System/Network/UPnP/ports",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Network/UPnP/ports",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Network",
+														"UPnP",
+														"ports"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/System/Network/UPnP/ports/status",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Network/UPnP/ports/status",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Network",
+														"UPnP",
+														"ports",
+														"status"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/System/Network/UPnP/ports/1",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Network/UPnP/ports/1",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Network",
+														"UPnP",
+														"ports",
+														"1"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/System/Network/UPnP/ports/1/status",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Network/UPnP/ports/1/status",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Network",
+														"UPnP",
+														"ports",
+														"1",
+														"status"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "interfaces",
+									"item": [
+										{
+											"name": "/ISAPI/System/Network/interfaces",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Network/interfaces",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Network",
+														"interfaces"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/System/Network/interfaces/capabilities",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Network/interfaces/capabilities",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Network",
+														"interfaces",
+														"capabilities"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/System/Network/interfaces/1",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Network/interfaces/1",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Network",
+														"interfaces",
+														"1"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/System/Network/interfaces/1/discovery",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Network/interfaces/1/discovery",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Network",
+														"interfaces",
+														"1",
+														"discovery"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/System/Network/interfaces/1/ipAddress",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Network/interfaces/1/ipAddress",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Network",
+														"interfaces",
+														"1",
+														"ipAddress"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/System/Network/interfaces/1/link",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Network/interfaces/1/link",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Network",
+														"interfaces",
+														"1",
+														"link"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "mailing",
+									"item": [
+										{
+											"name": "/ISAPI/System/Network/mailing",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Network/mailing",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Network",
+														"mailing"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/System/Network/mailing/1",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Network/mailing/1",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Network",
+														"mailing",
+														"1"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "POE",
+									"item": [
+										{
+											"name": "/ISAPI/System/Network/POE/server/capabilities",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Network/POE/server/capabilities",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Network",
+														"POE",
+														"server",
+														"capabilities"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/System/Network/POE/server?format=json",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Network/POE/server?format=json",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Network",
+														"POE",
+														"server"
+													],
+													"query": [
+														{
+															"key": "format",
+															"value": "json"
+														}
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "ssh",
+									"item": [
+										{
+											"name": "/ISAPI/System/Network/ssh",
+											"event": [
+												{
+													"listen": "test",
+													"script": {
+														"exec": [
+															""
+														],
+														"type": "text/javascript",
+														"packages": {}
+													}
+												}
+											],
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Network/ssh",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Network",
+														"ssh"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/System/Network/ssh",
+											"event": [
+												{
+													"listen": "test",
+													"script": {
+														"exec": [
+															""
+														],
+														"type": "text/javascript",
+														"packages": {}
+													}
+												}
+											],
+											"request": {
+												"method": "PUT",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "<SSH version=\"2.0\" xmlns=\"http://www.isapi.org/ver20/XMLSchema\">\r\n<enabled>false</enabled>\r\n</SSH>",
+													"options": {
+														"raw": {
+															"language": "xml"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Network/ssh",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Network",
+														"ssh"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "/ISAPI/System/Network/socketIP",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Network/socketIP",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"Network",
+												"socketIP"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/System/Network/resourceStatistics",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Network/resourceStatistics",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"Network",
+												"resourceStatistics"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/System/Network/extension",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Network/extension",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"Network",
+												"extension"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/System/Network/capabilities",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Network/capabilities",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"Network",
+												"capabilities"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "onlineUpgrade",
+							"item": [
+								{
+									"name": "/ISAPI/System/onlineUpgrade/status",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/onlineUpgrade/status",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"onlineUpgrade",
+												"status"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/System/onlineUpgrade/capabilities",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/onlineUpgrade/capabilities",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"onlineUpgrade",
+												"capabilities"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/System/onlineUpgrade/version",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/onlineUpgrade/version?check=true",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"onlineUpgrade",
+												"version"
+											],
+											"query": [
+												{
+													"key": "check",
+													"value": "true"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/System/onlineUpgrade/server",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/onlineUpgrade/server",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"onlineUpgrade",
+												"server"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/System/onlineUpgrade/deviceParameter?format=json",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/onlineUpgrade/deviceParameter?format=json",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"onlineUpgrade",
+												"deviceParameter"
+											],
+											"query": [
+												{
+													"key": "format",
+													"value": "json"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/System/onlineUpgrade/downloadPackage/status?format=json",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/onlineUpgrade/downloadPackage/status?format=json",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"onlineUpgrade",
+												"downloadPackage",
+												"status"
+											],
+											"query": [
+												{
+													"key": "format",
+													"value": "json"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "deviceInfo",
+							"item": [
+								{
+									"name": "/ISAPI/System/deviceInfo",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/deviceInfo",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"deviceInfo"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/System/deviceInfo/capabilities",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/deviceInfo/capabilities",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"deviceInfo",
+												"capabilities"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "logServer",
+							"item": [
+								{
+									"name": "/ISAPI/System/logServer",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/logServer/",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"logServer",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/System/logServer/",
+									"protocolProfileBehavior": {
+										"strictSSL": false
+									},
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<LogServer>\r\n    <enabled>true</enabled>\r\n    <addressingFormatType>ipaddress</addressingFormatType>\r\n    <ipAddress>192.168.1.13</ipAddress>\r\n    <portNo>514</portNo>\r\n    <uploadInterval>1</uploadInterval>\r\n</LogServer>",
+											"options": {
+												"raw": {
+													"language": "xml"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/logServer/",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"logServer",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/System/logServer/test",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<LogServerTestDescription>\r\n    <addressingFormatType>ipaddress</addressingFormatType>\r\n    <ipAddress>192.168.1.13</ipAddress>\r\n    <portNo>514</portNo>\r\n</LogServerTestDescription>",
+											"options": {
+												"raw": {
+													"language": "xml"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/logServer/test",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"logServer",
+												"test"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/System/logServer/capabilities",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/logServer/capabilities",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"logServer",
+												"capabilities"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Serial",
+							"item": [
+								{
+									"name": "/ISAPI/System/Serial/capabilities",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Serial/capabilities",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"Serial",
+												"capabilities"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Video",
+							"item": [
+								{
+									"name": "inputs",
+									"item": [
+										{
+											"name": "/ISAPI/System/Video/inputs/channels/1/motion",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Video/inputs/channels/1/motion",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Video",
+														"inputs",
+														"channels",
+														"1",
+														"motion"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/System/Video/inputs/channels/1/motionDetection",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Video/inputs/channels/1/motionDetection",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Video",
+														"inputs",
+														"channels",
+														"1",
+														"motionDetection"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/System/Video/inputs/channels/1/motionDetection/capabilities",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Video/inputs/channels/1/motionDetection/capabilities",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Video",
+														"inputs",
+														"channels",
+														"1",
+														"motionDetection",
+														"capabilities"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "outputs",
+									"item": [
+										{
+											"name": "/ISAPI/System/Video/outputs/channels",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Video/outputs/channels",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Video",
+														"outputs",
+														"channels"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/System/Video/outputs/channels/1",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Video/outputs/channels/1",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Video",
+														"outputs",
+														"channels",
+														"1"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/System/Video/outputs/channels/1/capabilities",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Video/outputs/channels/1/capabilities",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Video",
+														"outputs",
+														"channels",
+														"1",
+														"capabilities"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "Menu",
+									"item": [
+										{
+											"name": "/ISAPI/System/Video/Menu",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Video/Menu",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Video",
+														"Menu"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/System/Video/Menu/1",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Video/Menu/1",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"Video",
+														"Menu",
+														"1"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "/ISAPI/System/Video/capabilities",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Video/capabilities",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"Video",
+												"capabilities"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "upgradeStatus",
+							"item": [
+								{
+									"name": "/ISAPI/System/upgradeStatus",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/upgradeStatus",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"upgradeStatus"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "workingstatus",
+							"item": [
+								{
+									"name": "/ISAPI/System/workingstatus?format=json",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/workingstatus?format=json",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"workingstatus"
+											],
+											"query": [
+												{
+													"key": "format",
+													"value": "json"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/System/workingstatus/chanStatus?format=json",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/workingstatus/chanStatus?format=json",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"workingstatus",
+												"chanStatus"
+											],
+											"query": [
+												{
+													"key": "format",
+													"value": "json"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/System/workingstatus/hdStatus?format=json",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/workingstatus/hdStatus?format=json",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"workingstatus",
+												"hdStatus"
+											],
+											"query": [
+												{
+													"key": "format",
+													"value": "json"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/System/workingstatus/IOStatus?format=json",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/workingstatus/IOStatus?format=json",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"workingstatus",
+												"IOStatus"
+											],
+											"query": [
+												{
+													"key": "format",
+													"value": "json"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "status",
+							"item": [
+								{
+									"name": "/ISAPI/System/status",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/status",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"status"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "capabilities",
+							"item": [
+								{
+									"name": "/ISAPI/System/capabilities",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/capabilities",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"capabilities"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "diagnosedData",
+							"item": [
+								{
+									"name": "/ISAPI/System/diagnosedData/parameter/capabilities",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/diagnosedData/parameter/capabilities",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"diagnosedData",
+												"parameter",
+												"capabilities"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "IO",
+							"item": [
+								{
+									"name": "inputs",
+									"item": [
+										{
+											"name": "/ISAPI/System/IO/inputs",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/IO/inputs",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"IO",
+														"inputs"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/System/IO/inputs/capabilities",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/IO/inputs/capabilities",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"IO",
+														"inputs",
+														"capabilities"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "outputs",
+									"item": [
+										{
+											"name": "/ISAPI/System/IO/outputs",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/IO/outputs",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"IO",
+														"outputs"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/System/IO/outputs/capabilities",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/IO/outputs/capabilities",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"System",
+														"IO",
+														"outputs",
+														"capabilities"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "/ISAPI/System/IO",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/IO",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"IO"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/System/IO/capabilities",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/IO/capabilities",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"IO",
+												"capabilities"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/System/IO/status",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/IO/status",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"IO",
+												"status"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Holidays",
+							"item": [
+								{
+									"name": "/ISAPI/System/Holidays",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Holidays",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"Holidays"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/System/Holidays/1",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/System/Holidays/1",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"System",
+												"Holidays",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Security",
+					"item": [
+						{
+							"name": "sessionLogin",
+							"item": [
+								{
+									"name": "/ISAPI/Security/sessionLogin/capabilities?username=admin",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Security/sessionLogin/capabilities?username=admin",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"Security",
+												"sessionLogin",
+												"capabilities"
+											],
+											"query": [
+												{
+													"key": "username",
+													"value": "admin"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "sessionLogout",
+							"item": [
+								{
+									"name": "/ISAPI/Security/sessionLogout",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Security/sessionLogout",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"Security",
+												"sessionLogout"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "users",
+							"item": [
+								{
+									"name": "/ISAPI/Security/users",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Security/users",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"Security",
+												"users"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/Security/users/1",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Security/users/1",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"Security",
+												"users",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "RTSPCertificate",
+							"item": [
+								{
+									"name": "/ISAPI/Security/RTSPCertificate",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Security/RTSPCertificate",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"Security",
+												"RTSPCertificate"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/Security/RTSPCertificate/capabilities",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Security/RTSPCertificate/capabilities",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"Security",
+												"RTSPCertificate",
+												"capabilities"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "UserPermission",
+							"item": [
+								{
+									"name": "/ISAPI/Security/UserPermission",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Security/UserPermission",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"Security",
+												"UserPermission"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/Security/UserPermission/1",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Security/UserPermission/1",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"Security",
+												"UserPermission",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "adminAccesses",
+							"item": [
+								{
+									"name": "/ISAPI/Security/adminAccesses",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Security/adminAccesses",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"Security",
+												"adminAccesses"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/Security/adminAccesses/capabilities",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Security/adminAccesses/capabilities",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"Security",
+												"adminAccesses",
+												"capabilities"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/Security/adminAccesses/1",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Security/adminAccesses/1",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"Security",
+												"adminAccesses",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "email",
+							"item": [
+								{
+									"name": "/ISAPI/Security/email/parameter/capabilities?format=json",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Security/email/parameter/capabilities?format=json",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"Security",
+												"email",
+												"parameter",
+												"capabilities"
+											],
+											"query": [
+												{
+													"key": "format",
+													"value": "json"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "extern",
+							"item": [
+								{
+									"name": "/ISAPI/Security/extern/capabilities",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Security/extern/capabilities",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"Security",
+												"extern",
+												"capabilities"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "capabilities",
+							"item": [
+								{
+									"name": "/ISAPI/Security/capabilities",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Security/capabilities",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"Security",
+												"capabilities"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/Security/capabilities?username=admin",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Security/capabilities?username=admin",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"Security",
+												"capabilities"
+											],
+											"query": [
+												{
+													"key": "username",
+													"value": "admin"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "/ISAPI/Security/userCheck",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Security/userCheck",
+									"protocol": "{{NVR_PROTOCOL}}",
+									"host": [
+										"{{NVR_HOSTNAME}}"
+									],
+									"port": "{{NVR_PORT}}",
+									"path": [
+										"ISAPI",
+										"Security",
+										"userCheck"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ISAPI/Security/onlineUser",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Security/onlineUser",
+									"protocol": "{{NVR_PROTOCOL}}",
+									"host": [
+										"{{NVR_HOSTNAME}}"
+									],
+									"port": "{{NVR_PORT}}",
+									"path": [
+										"ISAPI",
+										"Security",
+										"onlineUser"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ISAPI/Security/sessionHeartbeat",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Security/sessionHeartbeat",
+									"protocol": "{{NVR_PROTOCOL}}",
+									"host": [
+										"{{NVR_HOSTNAME}}"
+									],
+									"port": "{{NVR_PORT}}",
+									"path": [
+										"ISAPI",
+										"Security",
+										"sessionHeartbeat"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ISAPI/Security/webCertificate",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Security/webCertificate",
+									"protocol": "{{NVR_PROTOCOL}}",
+									"host": [
+										"{{NVR_HOSTNAME}}"
+									],
+									"port": "{{NVR_PORT}}",
+									"path": [
+										"ISAPI",
+										"Security",
+										"webCertificate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ISAPI/Security/token?format=json",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Security/token?format=json",
+									"protocol": "{{NVR_PROTOCOL}}",
+									"host": [
+										"{{NVR_HOSTNAME}}"
+									],
+									"port": "{{NVR_PORT}}",
+									"path": [
+										"ISAPI",
+										"Security",
+										"token"
+									],
+									"query": [
+										{
+											"key": "format",
+											"value": "json"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ISAPI/Security/questionConfiguration",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Security/questionConfiguration",
+									"protocol": "{{NVR_PROTOCOL}}",
+									"host": [
+										"{{NVR_HOSTNAME}}"
+									],
+									"port": "{{NVR_PORT}}",
+									"path": [
+										"ISAPI",
+										"Security",
+										"questionConfiguration"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ContentMgmt",
+					"item": [
+						{
+							"name": "Storage",
+							"item": [
+								{
+									"name": "hdd",
+									"item": [
+										{
+											"name": "/ISAPI/ContentMgmt/Storage/hdd",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/Storage/hdd",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"ContentMgmt",
+														"Storage",
+														"hdd"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/ContentMgmt/Storage/hdd/1/formatStatus",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/Storage/hdd/1/formatStatus",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"ContentMgmt",
+														"Storage",
+														"hdd",
+														"1",
+														"formatStatus"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/ContentMgmt/Storage/hdd/capabilities",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/Storage/hdd/capabilities",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"ContentMgmt",
+														"Storage",
+														"hdd",
+														"capabilities"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/ContentMgmt/Storage/hdd/1",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/Storage/hdd/1",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"ContentMgmt",
+														"Storage",
+														"hdd",
+														"1"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "extension",
+									"item": [
+										{
+											"name": "/ISAPI/ContentMgmt/Storage/extension",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/Storage/extension",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"ContentMgmt",
+														"Storage",
+														"extension"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/ContentMgmt/Storage/extension/capabilities",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/Storage/extension/capabilities",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"ContentMgmt",
+														"Storage",
+														"extension",
+														"capabilities"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "/ISAPI/ContentMgmt/storage",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/storage",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"ContentMgmt",
+												"storage"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/ContentMgmt/Storage/capabilities",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/Storage/capabilities",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"ContentMgmt",
+												"Storage",
+												"capabilities"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/ContentMgmt/Storage/dataReconstruction/progress?format=json",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/Storage/dataReconstruction/progress?format=json",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"ContentMgmt",
+												"Storage",
+												"dataReconstruction",
+												"progress"
+											],
+											"query": [
+												{
+													"key": "format",
+													"value": "json"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "record",
+							"item": [
+								{
+									"name": "tracks",
+									"item": [
+										{
+											"name": "/ISAPI/ContentMgmt/record/tracks",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/record/tracks",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"ContentMgmt",
+														"record",
+														"tracks"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/ContentMgmt/record/tracks/101",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/record/tracks/101",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"ContentMgmt",
+														"record",
+														"tracks",
+														"101"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/ContentMgmt/record/tracks/101/capabilities",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/record/tracks/101/capabilities",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"ContentMgmt",
+														"record",
+														"tracks",
+														"101",
+														"capabilities"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "download",
+							"item": [
+								{
+									"name": "/ISAPI/ContentMgmt/download/capabilities",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/download/capabilities",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"ContentMgmt",
+												"download",
+												"capabilities"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/ContentMgmt/download",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "<downloadRequest version=\"1.0\" xmlns=\"http://www.isapi.org/ver20/XMLSchema\">\r\n    <playbackURI>\r\n        rtsp://192.168.1.11:80/Streaming/tracks/101/?starttime=20240816T000000Z&amp;endtime=20240816T002426Z&amp;name=00000000197000000&amp;size=1065562088\r\n        <!--required, xs:string, playback URL, returned by the search service. It contains the information of file name and\r\nsize, e.g., <playbackURI>rtsp://IpAddress/Streaming/tracks/101?starttime=2016-07-18\r\n00:00:00&endtime=2016-07-18 00:25:04Z&name=00000000721000000&size=1065437356</playbackURI>-->\r\n    </playbackURI>\r\n    <downloadCourseFile>\r\n        <!--optional, xs:boolean, whether to download the course files-->\r\n    </downloadCourseFile>\r\n</downloadRequest>",
+											"options": {
+												"raw": {
+													"language": "xml"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/download",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"ContentMgmt",
+												"download"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "search",
+							"item": [
+								{
+									"name": "/ISAPI/ContentMgmt/search",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "<?xml version \"1.0\" encoding=\"utf-8\"?>\r\n<CMSearchDescription>\r\n    <searchID>CADC350C-60D0-0001-AE2D-77ECDBC016CB</searchID>\r\n    <trackList>\r\n        <trackID>101</trackID>\r\n    </trackList>\r\n    <timeSpanList>\r\n        <timeSpan>\r\n            <startTime>2024-08-16T00:00:00Z</startTime>\r\n            <endTime>2024-08-16T23:59:59Z</endTime>\r\n        </timeSpan>\r\n    </timeSpanList>\r\n    <maxResults>50</maxResults>\r\n    <searchResultPostion>0</searchResultPostion>\r\n    <metadataList>\r\n        <metadataDescriptor>//recordType.meta.std-cgi.com</metadataDescriptor>\r\n    </metadataList>\r\n</CMSearchDescription>",
+											"options": {
+												"raw": {
+													"language": "xml"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/search/",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"ContentMgmt",
+												"search",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/ContentMgmt/search/profile",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "<?xml version \"1.0\" encoding=\"utf-8\"?>\r\n<CMSearchDescription>\r\n    <searchID>CADC350C-60D0-0001-AE2D-77ECDBC016CB</searchID>\r\n    <trackList>\r\n        <trackID>101</trackID>\r\n    </trackList>\r\n    <timeSpanList>\r\n        <timeSpan>\r\n            <startTime>2024-08-16T00:00:00Z</startTime>\r\n            <endTime>2024-08-16T23:59:59Z</endTime>\r\n        </timeSpan>\r\n    </timeSpanList>\r\n    <maxResults>50</maxResults>\r\n    <searchResultPostion>0</searchResultPostion>\r\n    <metadataList>\r\n        <metadataDescriptor>//recordType.meta.std-cgi.com</metadataDescriptor>\r\n    </metadataList>\r\n</CMSearchDescription>",
+											"options": {
+												"raw": {
+													"language": "xml"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/search/profile",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"ContentMgmt",
+												"search",
+												"profile"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "inputProxy",
+							"item": [
+								{
+									"name": "channels",
+									"item": [
+										{
+											"name": "/ISAPI/ContentMgmt/InputProxy/channels",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/InputProxy/channels",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"ContentMgmt",
+														"InputProxy",
+														"channels"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/ContentMgmt/InputProxy/channels/status",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/InputProxy/channels/status/",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"ContentMgmt",
+														"InputProxy",
+														"channels",
+														"status",
+														""
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/ContentMgmt/InputProxy/channels/activate/capabilities",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/InputProxy/channels/activate/capabilities",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"ContentMgmt",
+														"InputProxy",
+														"channels",
+														"activate",
+														"capabilities"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/ContentMgmt/InputProxy/channels/1",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/InputProxy/channels/1",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"ContentMgmt",
+														"InputProxy",
+														"channels",
+														"1"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/ContentMgmt/InputProxy/channels/1",
+											"request": {
+												"method": "PUT",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\r\n<InputProxyChannel version=\"1.0\" xmlns=\"http://www.hikvision.com/ver20/XMLSchema\">\r\n    <id>1</id>\r\n    <name>IPCamera 01</name>\r\n    <sourceInputPortDescriptor>\r\n        <proxyProtocol>HIKVISION</proxyProtocol>\r\n        <addressingFormatType>ipaddress</addressingFormatType>\r\n        <ipAddress>192.168.254.2</ipAddress>\r\n        <managePortNo>8000</managePortNo>\r\n        <srcInputPort>1</srcInputPort>\r\n        <userName>admin</userName>\r\n        <connMode>manual</connMode>\r\n        <streamType>auto</streamType>\r\n        <deviceID></deviceID>\r\n    </sourceInputPortDescriptor>\r\n</InputProxyChannel>",
+													"options": {
+														"raw": {
+															"language": "xml"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/InputProxy/channels/1",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"ContentMgmt",
+														"InputProxy",
+														"channels",
+														"1"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/ContentMgmt/InputProxy/channels/1/video/overlays",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/InputProxy/channels/1/video/overlays",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"ContentMgmt",
+														"InputProxy",
+														"channels",
+														"1",
+														"video",
+														"overlays"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/ContentMgmt/InputProxy/channels/1/video/overlays",
+											"request": {
+												"method": "PUT",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "<?xml version='1.0' encoding='utf-8'?>\r\n<VideoOverlay>\r\n    <normalizedScreenSize>\r\n        <normalizedScreenWidth>704</normalizedScreenWidth>\r\n        <normalizedScreenHeight>576</normalizedScreenHeight>\r\n    </normalizedScreenSize>\r\n    <attribute>\r\n        <transparent>false</transparent>\r\n        <flashing>false</flashing>\r\n    </attribute>\r\n    <TextOverlayList>\r\n        <TextOverlay>\r\n            <id>1</id>\r\n            <enabled>false</enabled>\r\n            <positionX>0</positionX>\r\n            <positionY>576</positionY>\r\n            <displayText></displayText>\r\n        </TextOverlay>\r\n        <TextOverlay>\r\n            <id>2</id>\r\n            <enabled>false</enabled>\r\n            <positionX>0</positionX>\r\n            <positionY>576</positionY>\r\n            <displayText></displayText>\r\n        </TextOverlay>\r\n        <TextOverlay>\r\n            <id>3</id>\r\n            <enabled>false</enabled>\r\n            <positionX>0</positionX>\r\n            <positionY>576</positionY>\r\n            <displayText></displayText>\r\n        </TextOverlay>\r\n        <TextOverlay>\r\n            <id>4</id>\r\n            <enabled>false</enabled>\r\n            <positionX>0</positionX>\r\n            <positionY>576</positionY>\r\n            <displayText></displayText>\r\n        </TextOverlay>\r\n        <TextOverlay>\r\n            <id>5</id>\r\n            <enabled>false</enabled>\r\n            <positionX>0</positionX>\r\n            <positionY>0</positionY>\r\n            <displayText/>\r\n        </TextOverlay>\r\n        <TextOverlay>\r\n            <id>6</id>\r\n            <enabled>false</enabled>\r\n            <positionX>0</positionX>\r\n            <positionY>0</positionY>\r\n            <displayText/>\r\n        </TextOverlay>\r\n        <TextOverlay>\r\n            <id>7</id>\r\n            <enabled>false</enabled>\r\n            <positionX>0</positionX>\r\n            <positionY>0</positionY>\r\n            <displayText/>\r\n        </TextOverlay>\r\n        <TextOverlay>\r\n            <id>8</id>\r\n            <enabled>false</enabled>\r\n            <positionX>0</positionX>\r\n            <positionY>0</positionY>\r\n            <displayText/>\r\n        </TextOverlay>\r\n    </TextOverlayList>\r\n    <DateTimeOverlay>\r\n        <enabled>true</enabled>\r\n        <positionX>6.668246445497634</positionX>\r\n        <positionY>563</positionY>\r\n        <dateStyle>DD-MM-YYYY</dateStyle>\r\n        <timeStyle>24hour</timeStyle>\r\n        <displayWeek>true</displayWeek>\r\n    </DateTimeOverlay>\r\n    <channelNameOverlay>\r\n        <enabled>true</enabled>\r\n        <positionX>576</positionX>\r\n        <positionY>0</positionY>\r\n    </channelNameOverlay>\r\n</VideoOverlay>",
+													"options": {
+														"raw": {
+															"language": "xml"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/InputProxy/channels/1/video/overlays",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"ContentMgmt",
+														"InputProxy",
+														"channels",
+														"1",
+														"video",
+														"overlays"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/ContentMgmt/InputProxy/channels/1/video/overlays/capabilities",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/InputProxy/channels/1/video/overlays/capabilities",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"ContentMgmt",
+														"InputProxy",
+														"channels",
+														"1",
+														"video",
+														"overlays",
+														"capabilities"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/ContentMgmt/InputProxy/channels/1/video/privacyMask",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/InputProxy/channels/1/video/privacyMask",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"ContentMgmt",
+														"InputProxy",
+														"channels",
+														"1",
+														"video",
+														"privacyMask"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/ContentMgmt/InputProxy/channels/1/video/motionDetection",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/InputProxy/channels/1/video/motionDetection",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"ContentMgmt",
+														"InputProxy",
+														"channels",
+														"1",
+														"video",
+														"motionDetection"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/ContentMgmt/InputProxy/channels/1/video/motionDetection/layout",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/InputProxy/channels/1/video/motionDetection/layout",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"ContentMgmt",
+														"InputProxy",
+														"channels",
+														"1",
+														"video",
+														"motionDetection",
+														"layout"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/ContentMgmt/InputProxy/channels/1/video/motionDetection/layout/capabilities",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/InputProxy/channels/1/video/motionDetection/layout/capabilities",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"ContentMgmt",
+														"InputProxy",
+														"channels",
+														"1",
+														"video",
+														"motionDetection",
+														"layout",
+														"capabilities"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/ContentMgmt/InputProxy/channels/1/video/tamperDetection",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/InputProxy/channels/1/video/tamperDetection",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"ContentMgmt",
+														"InputProxy",
+														"channels",
+														"1",
+														"video",
+														"tamperDetection"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/ContentMgmt/InputProxy/channels/1/video/videoLoss",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/InputProxy/channels/1/video/videoLoss",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"ContentMgmt",
+														"InputProxy",
+														"channels",
+														"1",
+														"video",
+														"videoLoss"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "/ISAPI/ContentMgmt/InputProxy/search",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/InputProxy/search",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"ContentMgmt",
+												"InputProxy",
+												"search"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "StreamingProxy",
+							"item": [
+								{
+									"name": "/ISAPI/ContentMgmt/StreamingProxy/channels",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/StreamingProxy/channels",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"ContentMgmt",
+												"StreamingProxy",
+												"channels"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/ContentMgmt/StreamingProxy/channels/101",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/StreamingProxy/channels/101",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"ContentMgmt",
+												"StreamingProxy",
+												"channels",
+												"101"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/ContentMgmt/StreamingProxy/channels/101/dynamicCap",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/StreamingProxy/channels/101/dynamicCap",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"ContentMgmt",
+												"StreamingProxy",
+												"channels",
+												"101",
+												"dynamicCap"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/ContentMgmt/StreamingProxy/channels/101/capabilities",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/StreamingProxy/channels/101/capabilities",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"ContentMgmt",
+												"StreamingProxy",
+												"channels",
+												"101",
+												"capabilities"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "capabilities",
+							"item": [
+								{
+									"name": "/ISAPI/ContentMgmt/capabilities",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/capabilities",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"ContentMgmt",
+												"capabilities"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "logSearch",
+							"item": [
+								{
+									"name": "/ISAPI/ContentMgmt/logSearch?format=json (NOT FINISHED)",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"searchID\": \"\",\r\n    /*required, string, Search ID, which is used to check whether the current search requester is the same as the previous\r\none. If they are the same, the search record will be stored in the device to speed up the next search, the maximum\r\nlength is 32 bytes*/\r\n    \"timeSpanList\": {\r\n        /*required, list of time periods*/\r\n        \"timeSpan\": {\r\n            /*required, time periods*/\r\n            \"startTime\": \"\",\r\n            /*required, string, start time of search, ISO8601 time format, the maximum length is 32 bytes*/\r\n            \"endTime\": \"\"\r\n            /*required, string, end time of search, ISO8601 time format, the maximum length is 32 bytes*/\r\n        }\r\n    },\r\n    \"metaID\": \"\",\r\n    /*required, string, log type string, log type includes \"Alarm\"-alarm log, \"Exception\"-exception log, \"Operation\"-\r\noperation log, and \"Information\"-additional information; e.g.,\"log.std-cgi.com/Alarm\", the maximum length is 64\r\nbytes*/\r\n    \"searchResultPostion\": ,\r\n    /*required, integer32, the start position of search result in result list*/\r\n    \"maxResults\": ,\r\n    /*required, integer32, the maximum number of records supported in this search*/\r\n    \"wildcard \": \"\",\r\n    /*optional, string, wildcard, which is used for fuzzy search, the maximum length is 48 bytes*/\r\n    \"operationType\": ,\r\n    /*optional, operation type, it is valid only when metaID is set to \"Operation\": 0-all, 1-software started, 2-software\r\nstopped, 3-configuration page entered, 4-parameters edited, 5-file search, 6-device connected, 7-information\r\ncollection started, 8-information collection ended, 9-devices disconnected, 10-password changed, 11-disk space\r\nchecked, 12-network status checked*/\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/logSearch?format=json",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"ContentMgmt",
+												"logSearch"
+											],
+											"query": [
+												{
+													"key": "format",
+													"value": "json"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "ImageProxy",
+							"item": [
+								{
+									"name": "/ISAPI/ContentMgmt/ImageProxy/channels",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/ImageProxy/channels",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"ContentMgmt",
+												"ImageProxy",
+												"channels"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/ContentMgmt/ImageProxy/channels/1",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/ImageProxy/channels/1",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"ContentMgmt",
+												"ImageProxy",
+												"channels",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/ContentMgmt/ImageProxy/channels/1/capabilities",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/ContentMgmt/ImageProxy/channels/1/capabilities",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"ContentMgmt",
+												"ImageProxy",
+												"channels",
+												"1",
+												"capabilities"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Streaming",
+					"item": [
+						{
+							"name": "/ISAPI/Streaming/channels",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Streaming/channels",
+									"protocol": "{{NVR_PROTOCOL}}",
+									"host": [
+										"{{NVR_HOSTNAME}}"
+									],
+									"port": "{{NVR_PORT}}",
+									"path": [
+										"ISAPI",
+										"Streaming",
+										"channels"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ISAPI/Streaming/channels/101",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Streaming/channels/101/",
+									"protocol": "{{NVR_PROTOCOL}}",
+									"host": [
+										"{{NVR_HOSTNAME}}"
+									],
+									"port": "{{NVR_PORT}}",
+									"path": [
+										"ISAPI",
+										"Streaming",
+										"channels",
+										"101",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Thermal",
+					"item": [
+						{
+							"name": "/ISAPI/Thermal/capabilities",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Thermal/capabilities",
+									"protocol": "{{NVR_PROTOCOL}}",
+									"host": [
+										"{{NVR_HOSTNAME}}"
+									],
+									"port": "{{NVR_PORT}}",
+									"path": [
+										"ISAPI",
+										"Thermal",
+										"capabilities"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "AUXInfo",
+					"item": [
+						{
+							"name": "/ISAPI/AUXInfo/attributes/Channels",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/AUXInfo/attributes/Channels",
+									"protocol": "{{NVR_PROTOCOL}}",
+									"host": [
+										"{{NVR_HOSTNAME}}"
+									],
+									"port": "{{NVR_PORT}}",
+									"path": [
+										"ISAPI",
+										"AUXInfo",
+										"attributes",
+										"Channels"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ISAPI/AUXInfo/attributes/Channels/1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/AUXInfo/attributes/Channels/1",
+									"protocol": "{{NVR_PROTOCOL}}",
+									"host": [
+										"{{NVR_HOSTNAME}}"
+									],
+									"port": "{{NVR_PORT}}",
+									"path": [
+										"ISAPI",
+										"AUXInfo",
+										"attributes",
+										"Channels",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Event",
+					"item": [
+						{
+							"name": "schedules",
+							"item": [
+								{
+									"name": "/ISAPI/Event/schedules/videoloss",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Event/schedules/videoloss",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"Event",
+												"schedules",
+												"videoloss"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/Event/schedules/motionDetections",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Event/schedules/motionDetections",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"Event",
+												"schedules",
+												"motionDetections"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/Event/schedules/motionDetections/VMD_video2",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Event/schedules/motionDetections/VMD_video2",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"Event",
+												"schedules",
+												"motionDetections",
+												"VMD_video2"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/Event/schedules/tamperdetection",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Event/schedules/tamperdetection",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"Event",
+												"schedules",
+												"tamperdetection"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/Event/schedules/recordingfailure (404 - Not Found)",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Event/schedules/recordingfailure",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"Event",
+												"schedules",
+												"recordingfailure"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/Event/schedules/illaccess (404 - Not Found)",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Event/schedules/illaccess",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"Event",
+												"schedules",
+												"illaccess"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/Event/schedules/ipconflict (404 - Not Found)",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Event/schedules/ipconflict",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"Event",
+												"schedules",
+												"ipconflict"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/Event/schedules/nicbroken (404 - Not Found)",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Event/schedules/nicbroken",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"Event",
+												"schedules",
+												"nicbroken"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/Event/schedules/diskfull (404 - Not Found)",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Event/schedules/diskfull",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"Event",
+												"schedules",
+												"diskfull"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/Event/schedules/VMD (404 - Not Found)",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Event/schedules/VMD",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"Event",
+												"schedules",
+												"VMD"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "notification",
+							"item": [
+								{
+									"name": "Streaming",
+									"item": [
+										{
+											"name": "/ISAPI/Event/notification/Streaming",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Event/notification/Streaming",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"Event",
+														"notification",
+														"Streaming"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/Event/notification/Streaming/101/",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Event/notification/Streaming/101/",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"Event",
+														"notification",
+														"Streaming",
+														"101",
+														""
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/Event/notification/Streaming/101/capabilities",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Event/notification/Streaming/101/capabilities",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"Event",
+														"notification",
+														"Streaming",
+														"101",
+														"capabilities"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "httpHosts",
+									"item": [
+										{
+											"name": "/ISAPI/Event/notification/httpHosts",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Event/notification/httpHosts",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"Event",
+														"notification",
+														"httpHosts"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/Event/notification/httpHosts",
+											"request": {
+												"method": "PUT",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "<HttpHostNotificationList version=\"2.0\" xmlns=\"http://www.isapi.org/ver20/XMLSchema\">\r\n  <HttpHostNotification>\r\n    <id>1</id>\r\n    <url>http://192.168.0.13:514/lectura</url>\r\n    <protocolType>HTTP</protocolType>\r\n    <parameterFormatType>XML</parameterFormatType>\r\n    <addressingFormatType>ipaddress</addressingFormatType>\r\n    <ipAddress>192.168.0.13</ipAddress>\r\n    <portNo>514</portNo>\r\n    <userName></userName>\r\n    <httpAuthenticationMethod>none</httpAuthenticationMethod>\r\n  </HttpHostNotification>\r\n</HttpHostNotificationList>",
+													"options": {
+														"raw": {
+															"language": "xml"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Event/notification/httpHosts",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"Event",
+														"notification",
+														"httpHosts"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "/ISAPI/Event/notification/httpHosts/1",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Event/notification/httpHosts/1",
+													"protocol": "{{NVR_PROTOCOL}}",
+													"host": [
+														"{{NVR_HOSTNAME}}"
+													],
+													"port": "{{NVR_PORT}}",
+													"path": [
+														"ISAPI",
+														"Event",
+														"notification",
+														"httpHosts",
+														"1"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "triggers",
+							"item": [
+								{
+									"name": "/ISAPI/Event/triggers",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Event/triggers/",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"Event",
+												"triggers",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/Event/triggers/VMD-2",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Event/triggers/VMD-2",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"Event",
+												"triggers",
+												"VMD-2"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "triggersCap",
+							"item": [
+								{
+									"name": "/ISAPI/Event/triggersCap",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Event/triggersCap",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"Event",
+												"triggersCap"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ISAPI/Event/triggersCap/IOT",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Event/triggersCap/IOT",
+											"protocol": "{{NVR_PROTOCOL}}",
+											"host": [
+												"{{NVR_HOSTNAME}}"
+											],
+											"port": "{{NVR_PORT}}",
+											"path": [
+												"ISAPI",
+												"Event",
+												"triggersCap",
+												"IOT"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "/ISAPI/Event",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Event/",
+									"protocol": "{{NVR_PROTOCOL}}",
+									"host": [
+										"{{NVR_HOSTNAME}}"
+									],
+									"port": "{{NVR_PORT}}",
+									"path": [
+										"ISAPI",
+										"Event",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ISAPI/Event/capabilities",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Event/capabilities",
+									"protocol": "{{NVR_PROTOCOL}}",
+									"host": [
+										"{{NVR_HOSTNAME}}"
+									],
+									"port": "{{NVR_PORT}}",
+									"path": [
+										"ISAPI",
+										"Event",
+										"capabilities"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ISAPI/Event/channels/1/capabilities",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Event/channels/1/capabilities",
+									"protocol": "{{NVR_PROTOCOL}}",
+									"host": [
+										"{{NVR_HOSTNAME}}"
+									],
+									"port": "{{NVR_PORT}}",
+									"path": [
+										"ISAPI",
+										"Event",
+										"channels",
+										"1",
+										"capabilities"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "SDT",
+					"item": [
+						{
+							"name": "/ISAPI/SDT/Management/capabilities?format=json",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/SDT/Management/capabilities?format=json",
+									"protocol": "{{NVR_PROTOCOL}}",
+									"host": [
+										"{{NVR_HOSTNAME}}"
+									],
+									"port": "{{NVR_PORT}}",
+									"path": [
+										"ISAPI",
+										"SDT",
+										"Management",
+										"capabilities"
+									],
+									"query": [
+										{
+											"key": "format",
+											"value": "json"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ISAPI/SDT/Management/EventSearch/capabilities?format=json",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/SDT/Management/EventSearch/capabilities?format=json",
+									"protocol": "{{NVR_PROTOCOL}}",
+									"host": [
+										"{{NVR_HOSTNAME}}"
+									],
+									"port": "{{NVR_PORT}}",
+									"path": [
+										"ISAPI",
+										"SDT",
+										"Management",
+										"EventSearch",
+										"capabilities"
+									],
+									"query": [
+										{
+											"key": "format",
+											"value": "json"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PTZCtrl",
+					"item": [
+						{
+							"name": "/ISAPI/PTZCtrl/channels/1/patrols",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/PTZCtrl/channels/1/patrols",
+									"protocol": "{{NVR_PROTOCOL}}",
+									"host": [
+										"{{NVR_HOSTNAME}}"
+									],
+									"port": "{{NVR_PORT}}",
+									"path": [
+										"ISAPI",
+										"PTZCtrl",
+										"channels",
+										"1",
+										"patrols"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Intelligent",
+					"item": [
+						{
+							"name": "/ISAPI/Intelligent/channels/1/capabilities",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/ISAPI/Intelligent/channels/1/capabilities",
+									"protocol": "{{NVR_PROTOCOL}}",
+									"host": [
+										"{{NVR_HOSTNAME}}"
+									],
+									"port": "{{NVR_PORT}}",
+									"path": [
+										"ISAPI",
+										"Intelligent",
+										"channels",
+										"1",
+										"capabilities"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			],
+			"description": "### ISAPI\n\nThe OPEN Intelligent Security Application Programming Interface (ISAPI) is a text protocol in RESTful style based on HTTP for communicating between security devices/servers (e.g., cameras, DVR, NVR, etc.) and client software/system.\n\nIt defines the communication standard between device/server and client software/system via the Internet Protocol (IP) and communication protocol layer framework in the figures below.\n\n<img src=\"https://content.pstmn.io/ab67c12e-54e0-4a00-b491-77e9ec6a6dc9/RmlnIDEtMSBOZXR3b3JrIFRvcG9sb2d5LmpwZw==\" alt=\"Fig%201-1%20Network%20Topology\">\n\n### REST\n\nREST (REpresentational State Transfer) is a protocol design method which abstracts all information as the resources. The abstracted resources are marked by the uniform identifies, i.e., URI (Uniform Resource Identifiers) for simple and extendable management.\n\n<img src=\"https://content.pstmn.io/ed335c36-3068-494b-babc-1c79c2ebc284/RmlnIDEtMiBDb21tdW5pY2F0aW9uIFByb3RvY29sIExheWVyIEZyYW1ld29yay5qcGc=\" alt=\"Fig%201-2%20Communication%20Protocol%20Layer%20Framework\">"
+		},
+		{
+			"name": "doc",
+			"item": [
+				{
+					"name": "/doc/page/config/storage/planRecordDialog.asp",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/doc/page/config/storage/planRecordDialog.asp",
+							"protocol": "{{NVR_PROTOCOL}}",
+							"host": [
+								"{{NVR_HOSTNAME}}"
+							],
+							"port": "{{NVR_PORT}}",
+							"path": [
+								"doc",
+								"page",
+								"config",
+								"storage",
+								"planRecordDialog.asp"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "codebase",
+			"item": [
+				{
+					"name": "/codebase/version.xml",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/codebase/version.xml",
+							"protocol": "{{NVR_PROTOCOL}}",
+							"host": [
+								"{{NVR_HOSTNAME}}"
+							],
+							"port": "{{NVR_PORT}}",
+							"path": [
+								"codebase",
+								"version.xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/codebase/version.xml?version=V4.0.1build201029",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/codebase/version.xml?version=V4.0.1build201029",
+							"protocol": "{{NVR_PROTOCOL}}",
+							"host": [
+								"{{NVR_HOSTNAME}}"
+							],
+							"port": "{{NVR_PORT}}",
+							"path": [
+								"codebase",
+								"version.xml"
+							],
+							"query": [
+								{
+									"key": "version",
+									"value": "V4.0.1build201029"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SDK",
+			"item": [
+				{
+					"name": "/SDK/status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/SDK/status",
+							"protocol": "{{NVR_PROTOCOL}}",
+							"host": [
+								"{{NVR_HOSTNAME}}"
+							],
+							"port": "{{NVR_PORT}}",
+							"path": [
+								"SDK",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/SDK/activateStatus",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/SDK/activateStatus",
+							"protocol": "{{NVR_PROTOCOL}}",
+							"host": [
+								"{{NVR_HOSTNAME}}"
+							],
+							"port": "{{NVR_PORT}}",
+							"path": [
+								"SDK",
+								"activateStatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/SDK/capabilities",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/SDK/capabilities",
+							"protocol": "{{NVR_PROTOCOL}}",
+							"host": [
+								"{{NVR_HOSTNAME}}"
+							],
+							"port": "{{NVR_PORT}}",
+							"path": [
+								"SDK",
+								"capabilities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/SDK/language",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/SDK/language",
+							"protocol": "{{NVR_PROTOCOL}}",
+							"host": [
+								"{{NVR_HOSTNAME}}"
+							],
+							"port": "{{NVR_PORT}}",
+							"path": [
+								"SDK",
+								"language"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SoftwareLicense",
+			"item": [
+				{
+					"name": "/SoftwareLicense.txt",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{NVR_PROTOCOL}}://{{NVR_HOSTNAME}}:{{NVR_PORT}}/SoftwareLicense.txt",
+							"protocol": "{{NVR_PROTOCOL}}",
+							"host": [
+								"{{NVR_HOSTNAME}}"
+							],
+							"port": "{{NVR_PORT}}",
+							"path": [
+								"SoftwareLicense.txt"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "digest",
+		"digest": [
+			{
+				"key": "username",
+				"value": "{{NVR_USERNAME}}",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "{{NVR_PASSWORD}}",
+				"type": "string"
+			},
+			{
+				"key": "algorithm",
+				"value": "MD5",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
