@@ -45,7 +45,7 @@ Complete the following steps:
     - Choose a Blank Workspace and select Next
     - Choose a name for the new workspace and select *Only me* for who can access to it, if you prefer so. Select Create
 
-2. Now, go to the *Import* option next to your workspace name and drop the 3 files available from this repo and Select Import
+2. Now, go to the *Import* option next to your workspace name and drop the three files available from this [repository folder](./Postman/) and *Select Import*
 
     #### Postman collection
 
@@ -55,7 +55,7 @@ Complete the following steps:
 
     * [LAN] - Hikvision DS-7104NI-Q1 - 4P NVR.postman_environment
     * [WAN] - Hikvision DS-7104NI-Q1 - 4P NVR.postman_environment
-    * 
+
 3. Once import is finished, you can now go to the *Collections* and *Environments* to check the import process is done correctly
 
 4. Go to *Environments* tab and set your environments variables for both *LAN* and *WAN* environments and use the *Current value* column to fill the data
