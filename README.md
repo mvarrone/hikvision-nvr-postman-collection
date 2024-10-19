@@ -49,18 +49,18 @@ Complete the following steps:
 
     #### Postman collection
 
-    * Hikvision DS-7104NI-Q1 - 4P NVR API Documentation.postman_collection
+    * Hikvision DS-7104NI-Q1 - 4P NVR collection.postman_collection.json
 
     #### Environments
 
-    * [LAN] - Hikvision DS-7104NI-Q1 - 4P NVR.postman_environment
-    * [WAN] - Hikvision DS-7104NI-Q1 - 4P NVR.postman_environment
+    * [LAN] - Hikvision DS-7104NI-Q1 - 4P NVR.postman_environment.json
+    * [WAN] - Hikvision DS-7104NI-Q1 - 4P NVR.postman_environment.json
 
-3. Once import is finished, you can now go to the *Collections* and *Environments* to check the import process is done correctly
+3. Once import process is finished, you can then go to the *Collections* and *Environments* to check if it has been done correctly
 
 4. Go to *Environments* tab and set your environments variables for both *LAN* and *WAN* environments and use the *Current value* column to fill the data
    
-5. From the right top dropdown menu, select the environment you want to test next
+5. From the right top dropdown menu, select the environment you want to work with next
 
 6. Finally, go to *Collections* tab and try your requests. Remember: Some of the requests may not work for other NVR devices
 
